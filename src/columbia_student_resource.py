@@ -17,7 +17,7 @@ class ColumbiaStudentResource:
         print(usr, pw, h)
 
         conn = pymysql.connect(
-            user='admin',
+            user=usr,
             password=pw,
             host=h,
             cursorclass=pymysql.cursors.DictCursor,
